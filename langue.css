@@ -1,0 +1,48 @@
+nav{
+    overflow: hidden;
+    position: fixed;
+    background-color: antiquewhite;
+    width: 100%;
+}
+nav h2{
+    text-transform: uppercase;
+    text-align: center;
+    padding: 10px;
+    text-shadow:rgb(206, 153, 75) 5px 5px 6px;
+    color: brown;
+    font-size: 1em;
+}
+body{
+    background-color: grey;
+   margin: 0;
+   padding-top: 0;
+}
+body h1{
+   padding-top: 200px ;
+   text-align: center;
+   text-transform: uppercase;
+   font-size: 2,5em;
+   color: honeydew;
+   text-shadow: bisque 5px 5px 6px;
+}
+#trait{
+    height: 1px;
+    width: 25%;
+    background-color: wheat;
+    margin: 10px auto;
+    box-shadow: whitesmoke 5px 5px 6px;
+}
+#selection{
+    text-align: center;
+    padding: 20px;
+    color: wheat;
+}
+#selection :hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#selction option :hover{
+    transform: scale(1.03);
+    transition: 0.1s;
+}
