@@ -1,0 +1,266 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type: none;
+}
+/***************navbar************/
+nav{
+    margin: 0;
+    overflow: hidden;
+    position: fixed;
+    background-color: beige;
+    width: 100%;
+
+}
+nav li{
+    display: flex;
+    float: right;
+    padding: 10px 14px;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#edap{
+    float: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 1em;
+}
+header li :hover{
+    transform: scale(1.05);
+    transition: 0.1s;
+}
+/*********partie principale*********/
+#imageprincipale{
+    padding-top: 60px;
+height: 599px;
+background:url(media/EDAP-ISP\ main\ background.jpeg) fixed no-repeat 50% 50%; 
+background-size: cover;
+}
+h1{
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-size: 4em;
+   text-align: center;
+   color: rgba(192, 90, 7, 0.726); 
+   text-shadow: rgb(129, 81, 8) 2px 4px 10px ;
+   margin-top: 100px;
+}    
+#premiertrait{
+    height: 1px;
+    width: 25%;
+    margin: -3px auto ;
+    background-color: rgb(172, 115, 41);
+    box-shadow: 12px 10px 29px 2px rgba(0,0,0,0.32);
+}
+header h2{
+    text-align: center;
+    text-transform: lowercase;
+    font-family: cursive;
+    color: cornsilk;
+    text-shadow:5px 8px 16px black ;
+}
+/*********presentation***********/ 
+#presentation{
+    padding: 60px 40px;
+    background-color: papayawhip ;
+    height: 1000px;
+    
+}
+#presentation h2{
+    text-align: center;
+    font-size: 2em;
+}
+#presentation p{
+    padding: 0 20px;
+    text-align: center;
+}
+#lesoptions{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+#lesoptions h3{
+    color: peru;
+    text-align: center;
+
+}
+.lesoption img{
+   border-radius: 10px; 
+   box-shadow: rgba(0,0,0,0.32) 4px 8px 16px;
+}
+.lesoption:hover{
+    transform: scale(1.01);
+    transition: 0.5s ease-in-out;
+    opacity: 0.5;
+    cursor: pointer;
+}#prestation{
+    padding-top: 1px;
+    height: 1300px;
+    background-color: silver;
+}
+#prestation h2{
+    padding-top: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2em;
+}
+
+#library{
+    background-image: url(media/library.jpeg);
+}
+#playground1{
+    background-image: url(media/football.jpeg);
+}
+#playground2{
+    background-image: url(media/basketball.webp);
+}
+#lab{
+    background-image: url(media/lab.jpeg);
+}
+#prestation li{
+    height: 200px; 
+    width: 50% ;
+    max-width: 550px;
+    margin: 65px 100px 0 100px;
+    box-shadow: black 6px 9px 18px;
+    float: left;
+    display: block;
+    max-width: 550px;
+}
+#prestation p{
+   height: 45px;
+   width: 146px;
+   background-color: blanchedalmond;
+   float: right;
+   margin: 50px -100px 0 0;
+   text-align: center;
+   box-shadow: rgb(196, 156, 96) 3px 6px 8px;
+   opacity: 70%;
+}
+#prestation #playground1, #prestation #lab {
+    float: right;
+}
+#playground1 p, #lab p{
+    float:left;
+    margin-left: -100px;
+}
+footer{
+    height: 700px;
+    background-color: darkgray;
+    padding-top: 1px;
+    padding: 60px 0 10px 0;
+    color: wheat;
+    text-align: center;
+}
+footer h2{
+    font-size: 2em;
+    text-transform: uppercase;
+}
+form{
+    margin: 0 auto;
+    max-width: 900px;
+}
+input, textarea, button{
+    width: 50%;
+    padding: 15px 10px;
+    border: none;
+    margin: 1px 0; 
+    border-radius: 15px;
+}
+textarea{
+    height: 100px;
+}
+button:hover{
+background-color: black;
+color: blanchedalmond;
+cursor: pointer;
+transform: scale(1.05);
+transition: 0.7s;
+}
+#derniertrait{
+    height: 1px;
+    width: 75%;
+    background-color: blanchedalmond;
+    margin: 50px auto;
+}
+#copyrightandicons{
+    display: flex;
+    padding: 0 10%;
+}
+#copyright{
+    width: 50%;
+    text-align: left;
+    color: #fff;
+    font-size: 0.5em;
+}
+#icons{
+    width: 50%;
+    text-align: right;
+}
+#icons a{
+    padding: 0 15px;
+    color: whitesmoke;
+}
+#icons a :hover{
+    transform: scale(1.5);
+    transition: 0.8s;
+}
+@media screen and (min-width: 899px){
+    #presentation{
+        height: 500px;
+    }
+}
+@media screen and (max-width:500px){
+    nav{
+        position: static;
+    }
+    #imageprincipale{
+        padding-top: 30px;
+        height: 300px;
+    }
+    h1{
+        font-size: 2em;
+    }
+    #presentation h2{
+        font-size: 2em;
+    }
+    #presentation p{
+        padding: 10px;
+        font-size: 1em;
+    }
+    #presentation{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:464px){
+    nav li{
+        font-size: 00.5em;
+        padding: 5px 7px;
+    }
+}
+
+@media screen and (max-width:440px){
+        #presentation h2{
+            font-size: 1em;
+        }
+        #presentation p{
+            font-size: 0.5em;
+        }
+        .lesoption img{
+         height: 100px;   
+         width: 100px;
+        }
+        #presentation{
+            height: 600px;
+        }
+    }
